@@ -1,34 +1,16 @@
 package sabbir;
 
-import com.example.publicservicecommission.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.chart.LineChart;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class MarketingOfficerDashboardController
 {
-    @javafx.fxml.FXML
-    private Label newapplicationlabel;
-    @javafx.fxml.FXML
-    private TableColumn duestatuscoloum;
-    @javafx.fxml.FXML
-    private LineChart analyzecampaingchart;
-    @javafx.fxml.FXML
-    private Label budgetremaingdatalabel;
-    @javafx.fxml.FXML
-    private TableView pendingtaskstableview;
-    @javafx.fxml.FXML
-    private Label livecerculardatalabel;
-    @javafx.fxml.FXML
-    private TableColumn taskdiscriptioncoloum;
-
     private void openNewStage(String fxmlFile, String title) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sabbir/" + fxmlFile));
@@ -40,63 +22,77 @@ public class MarketingOfficerDashboardController
             newStage.show();
         }
         catch (IOException e){
-            System.err.println("Error loading FXML file: " + fxmlFile);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error Loading Screen");
+            alert.setHeaderText("Failed to load: " + title);
+            alert.setContentText("Check if FXML file exists: /sabbir/" + fxmlFile);
+            alert.showAndWait();
+
             e.printStackTrace();
         }
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void createcampaingbutton(ActionEvent actionEvent) {
         openNewStage("createcampaignview.fxml", "Create Campaing");
     }
-    @javafx.fxml.FXML
+
+    @FXML
     public void analyticsbutton(ActionEvent actionEvent) {
+        openNewStage("analyticsview.fxml", "Campaign Analytics & Reporting");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void quickcreaterecruitmentcampaignbutton(ActionEvent actionEvent) {
+        createcampaingbutton(actionEvent);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void quickpublishnewcircularbutton(ActionEvent actionEvent) {
+        publishcircularbutton(actionEvent);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void eventbutton(ActionEvent actionEvent) {
+        openNewStage("eventview.fxml", "Event Planning & Management");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void publishcircularbutton(ActionEvent actionEvent){
         openNewStage("publishcircularview.fxml", "Publish Circular");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void quickplaneventbutton(ActionEvent actionEvent) {
+        eventbutton(actionEvent);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void candidateexperiancebutton(ActionEvent actionEvent) {
+        openNewStage("candidateexperienceview.fxml", "Candidate Experience Review");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void budgetbutton(ActionEvent actionEvent) {
+        openNewStage("eventview.fxml", "Budget Tracking & Management");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void quickanalyticsreportbutton(ActionEvent actionEvent) {
+        analyticsbutton(actionEvent);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void contentbutton(ActionEvent actionEvent) {
+        openNewStage("contentview.fxml", "Content Management System");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void socialmediabutton(ActionEvent actionEvent) {
         openNewStage("socialmediaview.fxml", "Social Media");
-
     }
 }

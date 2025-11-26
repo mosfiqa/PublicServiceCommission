@@ -1,6 +1,7 @@
 package sabbir;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -18,12 +19,13 @@ public class PublishCircularController
     @javafx.fxml.FXML
     private TextArea descriptionTextArea;
     @javafx.fxml.FXML
-    private TextField postNameField;
-    @javafx.fxml.FXML
     private TextField vacanciesField;
+    @javafx.fxml.FXML
+    private ComboBox postNameComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {
+        postNameComboBox.getItems().addAll("Senior Officer", "Assistant Director", "Marketing Executive", "Software Engineer");
     }
 
     @javafx.fxml.FXML

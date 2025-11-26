@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="950.0" style="-fx-background-color: #242436;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.EventController">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" prefHeight="722.0" prefWidth="922.0" spacing="20.0" style="-fx-background-color: #3e3e57;">
+            <children>
+                <Label text="Plan &amp; Manage Recruitment Events" textFill="WHITE">
+                    <font>
+                        <Font name="Cambria Math" size="28.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label prefWidth="200.0" text="Event Name:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="eventNameField" prefHeight="35.0" prefWidth="650.0" promptText="e.g., Annual Job Fair - 2026" style="-fx-background-color: #242436; -fx-text-fill: white; -fx-border-color: #555555; -fx-border-radius: 5;" />
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER_LEFT" spacing="15.0">
+                    <children>
+                        <Label prefWidth="200.0" text="Date:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="eventDatePicker" prefHeight="35.0" prefWidth="200.0" promptText="Select Event Date" style="-fx-background-color: #242436; -fx-text-fill: white;" />
+
+                        <Label text="Time (Start):" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="timeField" prefHeight="35.0" prefWidth="150.0" promptText="e.g., 10:00 AM" style="-fx-background-color: #242436; -fx-text-fill: white; -fx-border-color: #555555; -fx-border-radius: 5;" />
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER_LEFT" spacing="15.0">
+                    <children>
+                        <Label prefWidth="200.0" text="Location Type:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="locationTypeComboBox" prefHeight="35.0" prefWidth="200.0" promptText="Physical / Online" style="-fx-background-color: #242436; -fx-text-fill: white;" />
+
+                        <Label text="Venue/Link:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="venueLinkField" prefHeight="35.0" prefWidth="350.0" promptText="Physical Address or Meeting Link" style="-fx-background-color: #242436; -fx-text-fill: white; -fx-border-color: #555555; -fx-border-radius: 5;" />
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER_LEFT" spacing="15.0">
+                    <children>
+                        <Label prefWidth="200.0" text="Target Audience:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="audienceComboBox" prefHeight="35.0" prefWidth="250.0" promptText="Students, Professionals, etc." style="-fx-background-color: #242436; -fx-text-fill: white;" />
+
+                        <Label text="Estimated Budget (Tk):" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="budgetField" prefHeight="35.0" prefWidth="150.0" promptText="e.g., 50000" style="-fx-background-color: #242436; -fx-text-fill: white; -fx-border-color: #555555; -fx-border-radius: 5;" />
+                    </children>
+                </HBox>
+
+                <Label text="Event Description &amp; Goals:" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="descriptionTextArea" prefHeight="200.0" prefWidth="882.0" promptText="Describe the event agenda, speakers, expected outcomes, and marketing goals here." style="-fx-background-color: #242436; -fx-text-fill: white; -fx-border-color: #555555; -fx-border-radius: 5;" wrapText="true" />
+
+                <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="800.0" spacing="15.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleSavePlan" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F79F1F;" text="Save Event Plan" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleSchedulePromotion" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #3498db;" text="Schedule Promotion" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #FF5252;" text="Cancel" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
