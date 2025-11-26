@@ -22,42 +22,42 @@
         </Label>
         <VBox layoutX="13.0" layoutY="78.0" prefHeight="766.0" prefWidth="223.0" style="-fx-background-color: #242436;">
             <children>
-                <Button mnemonicParsing="false" onAction="#publishcircularbutton" prefHeight="54.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Publish Circular" textFill="WHITE">
+                <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Publish Circular" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#createcampaingbutton" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Create Campaign" textFill="WHITE">
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Create Campaign" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="52.0" mnemonicParsing="false" onAction="#socialmediabutton" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Social Media" textFill="WHITE">
+                <Button layoutX="10.0" layoutY="52.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Social Media" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="94.0" mnemonicParsing="false" onAction="#analyticsbutton" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Analytics" textFill="WHITE">
+                <Button layoutX="10.0" layoutY="94.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Analytics" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="136.0" mnemonicParsing="false" onAction="#eventbutton" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Event" textFill="WHITE">
+                <Button layoutX="10.0" layoutY="136.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Event" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#contentbutton" prefHeight="53.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Content" textFill="WHITE">
+                <Button layoutX="10.0" layoutY="178.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Content" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="220.0" mnemonicParsing="false" onAction="#budgetbutton" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Budget" textFill="WHITE">
+                <Button layoutX="10.0" layoutY="220.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Budget" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-            <Button layoutX="10.0" layoutY="347.0" mnemonicParsing="false" onAction="#candidateexperiancebutton" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Candidate Exp. Review" textFill="WHITE">
+            <Button layoutX="10.0" layoutY="347.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Candidate Exp. Review" textFill="WHITE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="17.0" />
                </font>
@@ -73,7 +73,7 @@
                         <font>
                            <Font name="Arial Rounded MT Bold" size="23.0" />
                         </font></Label>
-                       <Label fx:id="livecerculardatalabel" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
+                       <Label style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
                    </VBox>
                   <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="334.0" style="-fx-background-color: #2C158A;">
                      <children>
@@ -82,7 +82,7 @@
                               <Font name="Arial Rounded MT Bold" size="23.0" />
                            </font>
                         </Label>
-                        <Label fx:id="budgetremaingdatalabel" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="0%" textFill="WHITE" />
+                        <Label style="-fx-font-size: 36px; -fx-font-weight: bold;" text="0%" textFill="WHITE" />
                      </children>
                   </VBox>
                   <VBox alignment="CENTER" layoutX="229.0" layoutY="10.0" prefHeight="100.0" prefWidth="365.0" style="-fx-background-color: #0E0536;">
@@ -92,12 +92,12 @@
                               <Font name="Arial Rounded MT Bold" size="23.0" />
                            </font>
                         </Label>
-                        <Label fx:id="newapplicationlabel" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
+                        <Label style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <LineChart fx:id="analyzecampaingchart" layoutX="14.0" layoutY="155.0" prefHeight="317.0" prefWidth="595.0" style="-fx-alternative-column-fill-visible: bkacj;">
+            <LineChart layoutX="14.0" layoutY="155.0" prefHeight="317.0" prefWidth="595.0" style="-fx-alternative-column-fill-visible: bkacj;">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
               </xAxis>
@@ -112,22 +112,22 @@
             </Text>
             <VBox layoutX="690.0" layoutY="165.0" prefHeight="160.0" prefWidth="351.0" style="-fx-border-color: #005409; -fx-border-width: 3;">
                <children>
-                  <Button mnemonicParsing="false" onAction="#quickpublishnewcircularbutton" prefHeight="37.0" prefWidth="354.0" style="-fx-background-color: #000945;" text="PUBLISH NEW CIRCULAR" textFill="#fffafa">
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="354.0" style="-fx-background-color: #000945;" text="PUBLISH NEW CIRCULAR" textFill="#fffafa">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#quickcreaterecruitmentcampaignbutton" prefHeight="46.0" prefWidth="351.0" style="-fx-background-color: #0F344F;" text="CREATE RECRUITMENT CAMPAIGN" textFill="WHITE">
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="351.0" style="-fx-background-color: #0F344F;" text="CREATE RECRUITMENT CAMPAIGN" textFill="WHITE">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#quickplaneventbutton" prefHeight="40.0" prefWidth="351.0" style="-fx-background-color: #031826;" text="PLAN RECRUITMENT EVENT" textFill="WHITE">
+                  <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="351.0" style="-fx-background-color: #031826;" text="PLAN RECRUITMENT EVENT" textFill="WHITE">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#quickanalyticsreportbutton" prefHeight="38.0" prefWidth="351.0" style="-fx-background-color: #272759;" text="ANALYTICS REPORT" textFill="WHITE">
+                  <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="351.0" style="-fx-background-color: #272759;" text="ANALYTICS REPORT" textFill="WHITE">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="17.0" />
                      </font>
@@ -139,10 +139,10 @@
                   <Font name="System Bold" size="30.0" />
                </font>
             </Text>
-            <TableView fx:id="pendingtaskstableview" layoutX="11.0" layoutY="513.0" prefHeight="235.0" prefWidth="1025.0" style="-fx-background-color: #0D0B2B;">
+            <TableView layoutX="11.0" layoutY="513.0" prefHeight="235.0" prefWidth="1025.0" style="-fx-background-color: #0D0B2B;">
               <columns>
-                <TableColumn fx:id="taskdiscriptioncoloum" prefWidth="630.0" text="Task Description" />
-                <TableColumn fx:id="duestatuscoloum" prefWidth="394.0" text="Due / Status" />
+                <TableColumn prefWidth="630.0" text="Task Description" />
+                <TableColumn prefWidth="394.0" text="Due / Status" />
               </columns>
             </TableView>
             <Text fill="WHITE" fontSmoothingType="LCD" layoutX="360.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pending Tasks &amp; Alerts">
