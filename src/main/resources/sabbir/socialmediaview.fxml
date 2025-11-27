@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="1053.0" style="-fx-background-color: #242436;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.SocialMediaController">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" prefHeight="738.0" prefWidth="485.0" spacing="15.0" style="-fx-background-color: #3e3e57;">
+            <children>
+                <Label text="Create &amp; Schedule New Post" textFill="WHITE">
+                    <font>
+                        <Font name="Cambria Math" size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label prefWidth="120.0" text="Platform:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="platformComboBox" prefHeight="30.0" prefWidth="350.0" promptText="Select Platform (e.g., Facebook, LinkedIn)" style="-fx-background-color: #242436; -fx-text-fill: white;" />
+                    </children>
+                </HBox>
+                <Label text="Post Content:" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="postContentTextArea" prefHeight="150.0" prefWidth="450.0" promptText="Type your recruitment announcement or campaign message here." style="-fx-background-color: #242436; -fx-text-fill: white;" wrapText="true" />
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label prefWidth="120.0" text="Image/Media URL:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="mediaUrlField" prefHeight="30.0" prefWidth="350.0" promptText="Optional URL or file path" style="-fx-background-color: #242436; -fx-text-fill: white;" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label prefWidth="120.0" text="Schedule Date:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="scheduleDatePicker" prefHeight="30.0" prefWidth="160.0" promptText="Select Date" style="-fx-background-color: #242436; -fx-text-fill: white;" />
+                        <Label text="Time (HH:MM):" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="scheduleTimeField" prefHeight="30.0" prefWidth="100.0" promptText="14:30" style="-fx-background-color: #242436; -fx-text-fill: white;" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="45.0" prefWidth="450.0" spacing="15.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handlePreviewPost" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #008CBA;" text="Preview" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleSchedulePost" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #4CAF50;" text="Schedule" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #FF5252;" text="Cancel" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <Label text="Scheduled Posts (Next 7 Days)" textFill="WHITE">
+                    <font>
+                        <Font name="Cambria Math" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextArea fx:id="scheduledPostsDisplay" editable="false" prefHeight="150.0" prefWidth="450.0" style="-fx-background-color: #242436; -fx-text-fill: #999999;" text="Loading scheduled posts..." wrapText="true" />
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+        <VBox layoutX="514.0" layoutY="14.0" prefHeight="738.0" prefWidth="525.0" spacing="15.0" style="-fx-background-color: #3e3e57;">
+            <children>
+                <Label text="Post Preview &amp; Performance" textFill="WHITE">
+                    <font>
+                        <Font name="Cambria Math" size="24.0" />
+                    </font>
+                </Label>
+                <Label text="Live Preview (e.g., Facebook Post Look)" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                    </font>
+                </Label>
+                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #242436; -fx-border-color: #555555; -fx-border-width: 1;">
+                    <children>
+                        <Label fx:id="previewContentLabel" alignment="TOP_LEFT" prefHeight="50.0" prefWidth="485.0" text="[Post content will appear here...]" textFill="WHITE" wrapText="true">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="previewImageView" fitHeight="150.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </VBox>
+                <Label text="Latest Campaign Performance (Last 7 Days)" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox spacing="10.0">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #0E0536;">
+                            <children>
+                                <Label text="Total Clicks" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="clicksLabel" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="0.0K" textFill="#00d4ff" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #3E0061;">
+                            <children>
+                                <Label text="Reach" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="reachLabel" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="00K" textFill="#ff52b9" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #2C158A;">
+                            <children>
+                                <Label text="Engagement" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="engagementLabel" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="0%" textFill="#f5ff9e" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Label text="Performance Chart (Optional)" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                    </font>
+                </Label>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #242436; -fx-border-color: #555555; -fx-border-width: 1;">
+               <children>
+                  <LineChart fx:id="performancechart" layoutX="7.0" prefHeight="263.0" prefWidth="500.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
