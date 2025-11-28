@@ -2,8 +2,8 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal1 {
-    private String circularId,title,department,description;
+public class goal10 {
+    private String circularId,title,qualification;
     private int vacancy;
     private LocalDate deadline;
 
@@ -23,20 +23,12 @@ public class goal1 {
         this.title = title;
     }
 
-    public String getDepartment() {
-        return department;
+    public String getQualification() {
+        return qualification;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
     }
 
     public int getVacancy() {
@@ -55,28 +47,25 @@ public class goal1 {
         this.deadline = deadline;
     }
 
-    public goal1(String circularId, String title, String department, String description, int vacancy, LocalDate deadline) {
+    @Override
+    public String toString() {
+        return "goal10{" +
+                "circularId='" + circularId + '\'' +
+                ", title='" + title + '\'' +
+                ", qualification='" + qualification + '\'' +
+                ", vacancy=" + vacancy +
+                ", deadline=" + deadline +
+                '}';
+    }
+
+    public goal10(String circularId, String title, String qualification, int vacancy, LocalDate deadline) {
         this.circularId = circularId;
         this.title = title;
-        this.department = department;
-        this.description = description;
+        this.qualification = qualification;
         this.vacancy = vacancy;
         this.deadline = deadline;
 
 
 
-
-    }
-
-    @Override
-    public String toString() {
-        return "goal1{" +
-                "circularId='" + circularId + '\'' +
-                ", title='" + title + '\'' +
-                ", department='" + department + '\'' +
-                ", description='" + description + '\'' +
-                ", vacancy=" + vacancy +
-                ", deadline=" + deadline +
-                '}';
     }
 }
