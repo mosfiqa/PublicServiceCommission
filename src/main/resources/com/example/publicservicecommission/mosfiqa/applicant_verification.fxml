@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="501.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicant_verification">
+   <children>
+      <TextField layoutX="179.0" layoutY="32.0" />
+      <TextField fx:id="NameTF" layoutX="179.0" layoutY="83.0" />
+      <TextField fx:id="AgeTF" layoutX="179.0" layoutY="126.0" />
+      <TextField fx:id="NIDTF" layoutX="179.0" layoutY="174.0" />
+      <Text layoutX="64.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant ID" />
+      <Text layoutX="64.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="75.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" />
+      <Text layoutX="86.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID" />
+      <RadioButton fx:id="rejectRadioButton" layoutX="570.0" layoutY="36.0" mnemonicParsing="false" text="reject" />
+      <RadioButton fx:id="ApproveRadioButton" layoutX="678.0" layoutY="36.0" mnemonicParsing="false" text="Approve" />
+      <TextArea fx:id="remarkTA" layoutX="578.0" layoutY="94.0" prefHeight="97.0" prefWidth="200.0" />
+      <Text layoutX="513.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="1.0" />
+      <Text layoutX="514.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="remarks" />
+      <Button layoutX="402.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleNIDButton" text="View NID File" />
+      <Button layoutX="367.0" layoutY="45.0" mnemonicParsing="false" onAction="#PhotoButton" text="View PhotoButton" />
+      <Button layoutX="369.0" layoutY="104.0" mnemonicParsing="false" onAction="#handlecertificateButton" text=" CertificateButton" />
+      <TableView fx:id="ApplicantTableView" layoutX="29.0" layoutY="241.0" prefHeight="200.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="AIDTableCOL" prefWidth="130.3999900817871" text="Applicant ID" />
+          <TableColumn fx:id="nameTableCOL" prefWidth="168.8000030517578" text="Name" />
+            <TableColumn fx:id="STATUSTCOL" prefWidth="73.5999755859375" text="status" />
+            <TableColumn fx:id="viewTCOL" prefWidth="199.20001220703125" text="View Button" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="439.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicant_register">
+   <children>
+      <TableView fx:id="circularTV" layoutX="27.0" layoutY="29.0" prefHeight="226.0" prefWidth="746.0">
+        <columns>
+          <TableColumn fx:id="idTCOL" prefWidth="100.79998779296875" text="Circular ID" />
+          <TableColumn fx:id="TITALTCOL" prefWidth="117.60003662109375" text="Title" />
+            <TableColumn fx:id="vacancyTCOL" prefWidth="117.60003662109375" text="Vacancy" />
+            <TableColumn fx:id="quaTCOL" prefWidth="132.7999755859375" text="Qualification" />
+            <TableColumn fx:id="viewTCOL" prefWidth="132.7999755859375" text="View Button" />
+            <TableColumn prefWidth="132.7999755859375" text="Dedline" />
+        </columns>
+      </TableView>
+      <Button layoutX="53.0" layoutY="299.0" mnemonicParsing="false" onAction="#loadButton" text="Load Circular" />
+   </children>
+</AnchorPane>
