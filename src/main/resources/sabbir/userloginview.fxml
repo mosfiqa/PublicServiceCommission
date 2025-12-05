@@ -36,7 +36,7 @@
                   <Font name="Arial Rounded MT Bold" size="17.0" />
                </font>
             </Label>
-            <Button layoutX="419.0" layoutY="194.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="56.0" prefWidth="165.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Login" textFill="WHITE">
+            <Button fx:id="loginbuttononaction" layoutX="419.0" layoutY="194.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="56.0" prefWidth="165.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Login" textFill="WHITE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="21.0" />
                </font>

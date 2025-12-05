@@ -27,6 +27,8 @@ public class EventController
 
     @javafx.fxml.FXML
     public void initialize() {
+        audienceComboBox.getItems().addAll("Student","Others");
+        locationTypeComboBox.getItems().addAll("Online","Offline");
     }
 
     @javafx.fxml.FXML

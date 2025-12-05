@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="852.0" prefWidth="1312.0" style="-fx-background-color: #191924;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.marketing.MarketingOfficerDashboardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="951.0" prefWidth="1460.0" style="-fx-background-color: #191924;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.marketing.MarketingOfficerDashboardController">
     <children>
-        <Label layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="1289.0" style="-fx-background-color: #242436;" text="Welcome , Marketing Officer" textFill="WHITE">
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="1440.0" style="-fx-background-color: #2C158A;" text="Welcome , Marketing Officer ( Sabbir Ahammed Khan )" textFill="WHITE">
             <font>
                 <Font name="Cambria Math" size="36.0" />
             </font>
         </Label>
-        <VBox layoutX="13.0" layoutY="78.0" prefHeight="766.0" prefWidth="223.0" style="-fx-background-color: #242436;">
+        <VBox layoutX="13.0" layoutY="78.0" prefHeight="864.0" prefWidth="223.0" style="-fx-background-color: #242436;">
             <children>
                 <Button mnemonicParsing="false" onAction="#publishcircularbutton" prefHeight="54.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Publish Circular" textFill="WHITE">
                     <font>
@@ -47,110 +41,13 @@
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#contentbutton" prefHeight="53.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Content" textFill="WHITE">
-                    <font>
-                        <Font name="Arial Rounded MT Bold" size="21.0" />
-                    </font>
-                </Button>
                 <Button layoutX="10.0" layoutY="220.0" mnemonicParsing="false" onAction="#budgetbutton" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Budget" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="347.0" mnemonicParsing="false" onAction="#candidateexperiancebutton" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Candidate Exp. Review" textFill="WHITE">
-                    <font>
-                        <Font name="Arial Rounded MT Bold" size="17.0" />
-                    </font>
-                </Button>
             </children>
         </VBox>
-        <AnchorPane layoutX="249.0" layoutY="78.0" prefHeight="766.0" prefWidth="1053.0" style="-fx-background-color: #242436;">
-            <children>
-                <HBox layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="1025.0">
-                    <children>
-                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="326.0" style="-fx-background-color: #3E0061;">
-                            <Label text="LIVE CIRCULARS" textFill="WHITE">
-                                <font>
-                                    <Font name="Arial Rounded MT Bold" size="23.0" />
-                                </font></Label>
-                            <Label style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
-                        </VBox>
-                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="334.0" style="-fx-background-color: #2C158A;">
-                            <children>
-                                <Label text="BUDGET REMAINING" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Rounded MT Bold" size="23.0" />
-                                    </font>
-                                </Label>
-                                <Label style="-fx-font-size: 36px; -fx-font-weight: bold;" text="0%" textFill="WHITE" />
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" layoutX="229.0" layoutY="10.0" prefHeight="100.0" prefWidth="365.0" style="-fx-background-color: #0E0536;">
-                            <children>
-                                <Label text="NEW APPLICATIONS (Today)" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Rounded MT Bold" size="23.0" />
-                                    </font>
-                                </Label>
-                                <Label style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
-                            </children>
-                        </VBox>
-                    </children>
-                </HBox>
-                <LineChart layoutX="14.0" layoutY="155.0" prefHeight="317.0" prefWidth="595.0" style="-fx-alternative-column-fill-visible: bkacj;">
-                    <xAxis>
-                        <CategoryAxis side="BOTTOM" />
-                    </xAxis>
-                    <yAxis>
-                        <NumberAxis side="LEFT" />
-                    </yAxis>
-                </LineChart>
-                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="88.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analyze Campaign Effectiveness">
-                    <font>
-                        <Font name="System Bold" size="30.0" />
-                    </font>
-                </Text>
-                <VBox layoutX="690.0" layoutY="165.0" prefHeight="160.0" prefWidth="351.0" style="-fx-border-color: #005409; -fx-border-width: 3;">
-                    <children>
-                        <Button mnemonicParsing="false" onAction="#quickpublishnewcircularbutton" prefHeight="37.0" prefWidth="354.0" style="-fx-background-color: #000945;" text="PUBLISH NEW CIRCULAR" textFill="#fffafa">
-                            <font>
-                                <Font name="Arial Rounded MT Bold" size="17.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#quickcreaterecruitmentcampaignbutton" prefHeight="46.0" prefWidth="351.0" style="-fx-background-color: #0F344F;" text="CREATE RECRUITMENT CAMPAIGN" textFill="WHITE">
-                            <font>
-                                <Font name="Arial Rounded MT Bold" size="17.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#quickplaneventbutton" prefHeight="40.0" prefWidth="351.0" style="-fx-background-color: #031826;" text="PLAN RECRUITMENT EVENT" textFill="WHITE">
-                            <font>
-                                <Font name="Arial Rounded MT Bold" size="17.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#quickanalyticsreportbutton" prefHeight="38.0" prefWidth="351.0" style="-fx-background-color: #272759;" text="ANALYTICS REPORT" textFill="WHITE">
-                            <font>
-                                <Font name="Arial Rounded MT Bold" size="17.0" />
-                            </font>
-                        </Button>
-                    </children>
-                </VBox>
-                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="723.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick Action Button" wrappingWidth="326.0">
-                    <font>
-                        <Font name="System Bold" size="30.0" />
-                    </font>
-                </Text>
-                <TableView layoutX="11.0" layoutY="513.0" prefHeight="235.0" prefWidth="1025.0" style="-fx-background-color: #0D0B2B;">
-                    <columns>
-                        <TableColumn prefWidth="630.0" text="Task Description" />
-                        <TableColumn prefWidth="394.0" text="Due / Status" />
-                    </columns>
-                </TableView>
-                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="360.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pending Tasks &amp; Alerts">
-                    <font>
-                        <Font name="System Bold" size="30.0" />
-                    </font>
-                </Text>
-            </children>
-        </AnchorPane>
+      <BorderPane fx:id="dashboardBorderpane" layoutX="244.0" layoutY="80.0" prefHeight="864.0" prefWidth="1211.0" style="-fx-background-color: #242436;" />
     </children>
 </AnchorPane>

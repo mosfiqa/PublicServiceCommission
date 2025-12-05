@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="605.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.msv3_2310898.AdminDashboardController">
+   <children>
+      <Button layoutX="195.0" layoutY="67.0" mnemonicParsing="false" onAction="#ManageUsersButtonOnAction" prefHeight="26.0" prefWidth="478.0" text="Manage Users" />
+      <Button layoutX="195.0" layoutY="160.0" mnemonicParsing="false" onAction="#ViewLogsButtonOnAction" prefHeight="26.0" prefWidth="478.0" text="View Logs" />
+      <Button layoutX="195.0" layoutY="266.0" mnemonicParsing="false" onAction="#SystemConfigurationButtonOnAction" prefHeight="26.0" prefWidth="478.0" text="System configuration" />
+      <Button layoutX="195.0" layoutY="393.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="26.0" prefWidth="478.0" text="Log Out" />
+   </children>
+</AnchorPane>

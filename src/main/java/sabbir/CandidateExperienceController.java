@@ -1,4 +1,4 @@
-package sabbir.marketing;
+package sabbir;
 
 import javafx.event.ActionEvent;
 import javafx.scene.chart.BarChart;
