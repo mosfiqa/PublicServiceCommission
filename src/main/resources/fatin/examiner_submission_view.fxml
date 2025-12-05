@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.msv3_2310898.ExaminerSubmissionController">
+   <children>
+      <TableView fx:id="submissionsTableView" layoutX="170.0" layoutY="33.0" prefHeight="247.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="studentTableColumn" prefWidth="129.60000610351562" text="Student" />
+          <TableColumn fx:id="questionsTableColumn" prefWidth="113.5999755859375" text="Question" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="95.20001220703125" text="Date" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="157.60000610351562" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="166.0" layoutY="304.0" mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="26.0" prefWidth="501.0" text="Refresh" />
+      <TextArea fx:id="submissionDetailsTextArea" layoutX="165.0" layoutY="346.0" prefHeight="200.0" prefWidth="502.0" text="Submission Details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
