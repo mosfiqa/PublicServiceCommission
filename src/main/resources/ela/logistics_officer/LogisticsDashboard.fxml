@@ -9,21 +9,30 @@
 <BorderPane fx:id="dashboardBorderPane" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ela.logistics_officer.LogisticsDashboardController">
 
     <left>
-        <VBox prefHeight="650.0" prefWidth="230.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
+        <VBox prefHeight="650.0" prefWidth="240.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
             <children>
-                <Label alignment="CENTER" prefHeight="70.0" prefWidth="230.0" text="Logistics Officer" textFill="WHITE">
-                    <font><Font name="System Bold" size="20.0" /></font>
+                <Label alignment="CENTER" prefHeight="80.0" prefWidth="240.0" text="Logistics Officer" textFill="WHITE">
+                    <font><Font name="System Bold" size="22.0" /></font>
                 </Label>
 
-                <Button mnemonicParsing="false" onAction="#centerAllocationButtonOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="1. Center Allocation" />
+                <Button fx:id="centerAllocationButton" mnemonicParsing="false" onAction="#centerAllocationButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="1. Center Allocation">
+                    <font><Font size="14.0" /></font>
+                </Button>
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="2. Print Admit Cards" />
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="3. Distribution Lists" />
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="4. Inventory Tracking" />
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="5. Transport Schedule" />
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="6. Daily Reports" />
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="7. Incident Reports" />
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="8. Return Collection" />
+                <Button fx:id="printAdmitCardsButton" mnemonicParsing="false" onAction="#printAdmitCardsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="2. Print Admit Cards" />
+
+                <Button fx:id="distributionListsButton" mnemonicParsing="false" onAction="#distributionListsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="3. Distribution Lists" />
+
+                <Button fx:id="trackInventoryButton" mnemonicParsing="false" onAction="#trackInventoryButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="4. Inventory Tracking" />
+
+                <Button fx:id="transportScheduleButton" mnemonicParsing="false" onAction="#transportScheduleButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="5. Transport Schedule" />
+
+                <Button fx:id="dailyReportsButton" mnemonicParsing="false" onAction="#dailyReportsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="6. Daily Reports" />
+
+                <Button fx:id="incidentReportsButton" mnemonicParsing="false" onAction="#incidentReportsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="7. Incident Reports" />
+
+                <Button fx:id="returnCollectionButton" mnemonicParsing="false" onAction="#returnCollectionButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="8. Return Collection" />
+
             </children>
         </VBox>
     </left>

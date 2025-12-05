@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ela.accounts_officer.PaymentVerificationController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ela.accounts_officer.PaymentVerificationController">
     <children>
         <Label layoutX="32.0" layoutY="31.0" text="Accounts Officer: Payment Verification">
             <font>
@@ -32,7 +32,7 @@
             </columns>
         </TableView>
 
-        <Button fx:id="verifyButton" layoutX="600.0" layoutY="430.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" prefHeight="40.0" prefWidth="168.0" text="Verify Selected Payment" textFill="#009414">
+        <Button fx:id="verifyButton" layoutX="600.0" layoutY="455.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" prefHeight="40.0" prefWidth="168.0" text="Verify Selected Payment" textFill="#009414">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>

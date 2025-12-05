@@ -58,4 +58,8 @@ public class Payment {
                 '}';
     }
 
+    public String toString(String dummy) {
+        return transactionId + "," + applicantId + "," + amount + "," + status + "\n";
+    }
+
 }

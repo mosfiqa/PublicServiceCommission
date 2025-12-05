@@ -15,23 +15,31 @@
                     <font><Font name="System Bold" size="22.0" /></font>
                 </Label>
 
+
                 <Button fx:id="verifyPaymentButton" mnemonicParsing="false" onAction="#verifyPaymentButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="1. Verify Payments">
                     <font><Font size="14.0" /></font>
                 </Button>
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="2. Generate Receipts" />
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="3. Process Refunds" />
+                <Button fx:id="generateReceiptsButton" mnemonicParsing="false" onAction="#generateReceiptsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="2. Generate Receipts" />
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="4. Financial Summaries" />
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="5. Budget Planning" />
+                <Button fx:id="processRefundsButton" mnemonicParsing="false" onAction="#processRefundsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="3. Process Refunds" />
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="6. Comparison Charts" />
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="7. Audit Reports" />
+                <Button fx:id="financialSummariesButton" mnemonicParsing="false" onAction="#financialSummariesButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="4. Financial Summaries" />
 
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="8. Monitor Anomalies" />
+
+                <Button fx:id="budgetPlanningButton" mnemonicParsing="false" onAction="#budgetPlanningButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="5. Budget Planning" />
+
+
+                <Button fx:id="comparisonChartsButton" mnemonicParsing="false" onAction="#comparisonChartsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="6. Comparison Charts" />
+
+
+                <Button fx:id="auditReportsButton" mnemonicParsing="false" onAction="#auditReportsButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="7. Audit Reports" />
+
+
+                <Button fx:id="monitorAnomaliesButton" mnemonicParsing="false" onAction="#monitorAnomaliesButtonOnAction" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="8. Monitor Anomalies" />
 
             </children>
         </VBox>
