@@ -19,18 +19,18 @@ public class ExaminerDashboardController
 
     @javafx.fxml.FXML
     public void manageQuestionsButtonOnAction(ActionEvent actionEvent) {
-        loadScene("/com/example/msv3_2310898/examiner_question_management.fxml", e);
+        loadScene("examiner_question_management.fxml", e);
     }
 
     @javafx.fxml.FXML
     public void logoutButtonOnAction(ActionEvent actionEvent) {
-        loadScene("/com/example/msv3_2310898/examiner_login.fxml", e);
+        loadScene("examiner_login.fxml", e);
 
     }
 
     @javafx.fxml.FXML
     public void viewSubmissionsButtonOnAction(ActionEvent actionEvent) {
-        loadScene("/com/example/msv3_2310898/examiner_submission_view.fxml", e);
+        loadScene("examiner_submission_view.fxml", e);
     }
     private void loadScene(String fxml, ActionEvent e) {
         try {
