@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="473.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paymentController">
    <children>
       <TextField fx:id="nameTF" layoutX="127.0" layoutY="24.0" />
@@ -32,6 +31,8 @@
             <TableColumn fx:id="dateTCOL" prefWidth="163.20001220703125" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="399.0" layoutY="129.0" mnemonicParsing="false" onAction="#paymentButton" text="Payment" />
+      <Button layoutX="403.0" layoutY="129.0" mnemonicParsing="false" onAction="#addButton" text="add" />
+      <Button layoutX="473.0" layoutY="129.0" mnemonicParsing="false" onAction="#saveButton" text="save" />
+      <Button layoutX="548.0" layoutY="129.0" mnemonicParsing="false" onAction="#viewButton" text="view" />
    </children>
 </AnchorPane>

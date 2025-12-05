@@ -38,7 +38,19 @@ public class paymentController
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void paymentButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void viewButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void saveButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void addButton(ActionEvent actionEvent) {
     }
 }

@@ -1,25 +1,27 @@
 package mosfiqa;
 
+import com.example.complaint_management;
+
 import java.time.LocalDate;
 
-public class ComplaintManagement {
-    private String complaintId,applicantName,forwardedTo;
+public class complaint_management;  {
+    private String complaintId,applicantName;
     private String issue;
     private String status;
 
-    public ComplaintManagement(String complaintId, String applicantName, String forwardedTo, String issue, String status, LocalDate date) {
+    public ComplaintManagement(String complaintId, String applicantName, String issue, String status) {
         this.complaintId = complaintId;
         this.applicantName = applicantName;
-        this.forwardedTo = forwardedTo;
         this.issue = issue;
         this.status = status;
-        this.date = date;
     }
+}
 
     private LocalDate date;
 
     public String getComplaintId() {
         return complaintId;
+
     }
 
     public void setComplaintId(String complaintId) {
@@ -32,14 +34,6 @@ public class ComplaintManagement {
 
     public void setApplicantName(String applicantName) {
         this.applicantName = applicantName;
-    }
-
-    public String getForwardedTo() {
-        return forwardedTo;
-    }
-
-    public void setForwardedTo(String forwardedTo) {
-        this.forwardedTo = forwardedTo;
     }
 
     public String getIssue() {
@@ -73,7 +67,6 @@ public class ComplaintManagement {
         return "goal7{" +
                 "complaintId='" + complaintId + '\'' +
                 ", applicantName='" + applicantName + '\'' +
-                ", forwardedTo='" + forwardedTo + '\'' +
                 ", issue='" + issue + '\'' +
                 ", status='" + status + '\'' +
                 ", date=" + date +

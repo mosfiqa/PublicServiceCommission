@@ -5,6 +5,7 @@ module com.example.publicservicecommission {
     requires javafx.graphics;
     requires java.xml;
     requires java.desktop;
+    requires com.example.publicservicecommission;
 
 
     opens com.example.publicservicecommission to javafx.fxml;
