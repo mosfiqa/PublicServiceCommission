@@ -8,6 +8,22 @@ import javafx.scene.control.TextArea;
 
 public class ExaminerSubmissionController
 {
+<<<<<<< HEAD
+    @javafx.fxml.FXML
+    private TableColumn statusTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn questionsTableColumn;
+    @javafx.fxml.FXML
+    private TextArea submissionDetailsTextArea;
+    @javafx.fxml.FXML
+    private TableView submissionsTableView;
+    @javafx.fxml.FXML
+    private TableColumn dateTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn studentTableColumn;
+
+    @javafx.fxml.FXML
+=======
     @FXML
     private TableColumn statusTableColumn;
     @FXML
@@ -22,6 +38,7 @@ public class ExaminerSubmissionController
     private TableColumn studentTableColumn;
 
     @FXML
+>>>>>>> edf9a20480fa0e4280e9fae33fce03d9bef57143
     public void initialize() {
         loadSubmissions();
     }
@@ -59,7 +76,14 @@ public class ExaminerSubmissionController
 
     }
 
+<<<<<<< HEAD
+    @javafx.fxml.FXML
+    public void refreshButtonOnAction(ActionEvent actionEvent) {
+    }
+}
+=======
     @FXML
     public void refreshButtonOnAction(ActionEvent actionEvent) {
     }
 }
+>>>>>>> edf9a20480fa0e4280e9fae33fce03d9bef57143

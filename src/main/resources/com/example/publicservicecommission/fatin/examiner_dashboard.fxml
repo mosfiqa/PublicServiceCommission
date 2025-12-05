@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="587.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fatin.AdminDashboardController">
+    <children>
+        <Label fx:id="WelcomeLabel" layoutX="169.0" layoutY="16.0" prefHeight="68.0" prefWidth="488.0" text="                      Welcome" textFill="#25224e">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Label>
+        <Button layoutX="23.0" layoutY="161.0" mnemonicParsing="false" onAction="#manageQuestionsButtonOnAction" prefHeight="26.0" prefWidth="237.0" text="Manage Questions" />
+        <Button layoutX="294.0" layoutY="161.0" mnemonicParsing="false" onAction="#viewSubmissionsButtonOnAction" prefHeight="26.0" prefWidth="237.0" text="View Submissions" />
+        <Button layoutX="575.0" layoutY="161.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="26.0" prefWidth="237.0" text="Log Out" />
+    </children>
+</AnchorPane>
+

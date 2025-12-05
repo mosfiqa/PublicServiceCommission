@@ -24,12 +24,20 @@ public class ExaminerLoginController
     private TextField txtUsername;
     @FXML
     private Label lblError;
+<<<<<<< HEAD
+    @javafx.fxml.FXML
+=======
     @FXML
+>>>>>>> edf9a20480fa0e4280e9fae33fce03d9bef57143
     public void initialize() {
         lblError.setText("");  // clear error label
 
 
+<<<<<<< HEAD
+    }
+=======
 }
+>>>>>>> edf9a20480fa0e4280e9fae33fce03d9bef57143
 
     @FXML
     public void loginButtonOnAction(ActionEvent actionEvent) {
@@ -81,4 +89,8 @@ public class ExaminerLoginController
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> edf9a20480fa0e4280e9fae33fce03d9bef57143
