@@ -18,6 +18,7 @@ public class AnnualReportSignoffController
 
     @javafx.fxml.FXML
     public void initialize() {
+        yearSelectionComboBox.getItems().addAll("2023","2024","2025");
     }
 
     @javafx.fxml.FXML
