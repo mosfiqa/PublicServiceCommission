@@ -1,0 +1,44 @@
+package com.example;
+
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
+import java.awt.event.ActionEvent;
+
+public class paymentController
+{
+    @javafx.fxml.FXML
+    private TableColumn dateTCOL;
+    @javafx.fxml.FXML
+    private TextField nameTF;
+    @javafx.fxml.FXML
+    private TableColumn idTCOL;
+    @javafx.fxml.FXML
+    private TableColumn traidTCOL;
+    @javafx.fxml.FXML
+    private TableColumn amountTCOL;
+    @javafx.fxml.FXML
+    private TextField methodTF;
+    @javafx.fxml.FXML
+    private ComboBox methodCBOX;
+    @javafx.fxml.FXML
+    private ComboBox appliCBOX;
+    @javafx.fxml.FXML
+    private TextField tranTF;
+    @javafx.fxml.FXML
+    private TableColumn paymentTCOL;
+    @javafx.fxml.FXML
+    private TextField amountTF;
+    @javafx.fxml.FXML
+    private TableView paymentTV;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
+    @javafx.fxml.FXML
+    public void paymentButton(ActionEvent actionEvent) {
+    }
+}

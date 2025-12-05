@@ -2,7 +2,7 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal10 {
+public class JobCircularView {
     private String circularId,title,qualification;
     private int vacancy;
     private LocalDate deadline;
@@ -58,7 +58,7 @@ public class goal10 {
                 '}';
     }
 
-    public goal10(String circularId, String title, String qualification, int vacancy, LocalDate deadline) {
+    public JobCircularView(String circularId, String title, String qualification, int vacancy, LocalDate deadline) {
         this.circularId = circularId;
         this.title = title;
         this.qualification = qualification;

@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="556.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.complaint_management">
    <children>
       <TextArea fx:id="remarksTA" layoutX="100.0" layoutY="37.0" prefHeight="91.0" prefWidth="200.0" />
@@ -18,7 +17,7 @@
       <Text layoutX="397.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" />
       <TextField fx:id="subjectTF" layoutX="126.0" layoutY="160.0" />
       <Text layoutX="57.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject" />
-      <Button layoutX="545.0" layoutY="151.0" mnemonicParsing="false" onAction="#attachmentButton" text="Attachment" />
+      <Button layoutX="545.0" layoutY="151.0" mnemonicParsing="false" onAction="#addButton" text="Add" />
       <ComboBox fx:id="depCBOX" layoutX="140.0" layoutY="247.0" prefWidth="150.0" />
       <Text layoutX="42.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
       <TableView fx:id="compliaintTV" layoutX="40.0" layoutY="290.0" prefHeight="200.0" prefWidth="550.0">

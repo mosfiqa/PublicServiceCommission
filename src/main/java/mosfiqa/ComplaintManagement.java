@@ -2,12 +2,12 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal7{
+public class ComplaintManagement {
     private String complaintId,applicantName,forwardedTo;
     private String issue;
     private String status;
 
-    public goal7(String complaintId, String applicantName, String forwardedTo, String issue, String status, LocalDate date) {
+    public ComplaintManagement(String complaintId, String applicantName, String forwardedTo, String issue, String status, LocalDate date) {
         this.complaintId = complaintId;
         this.applicantName = applicantName;
         this.forwardedTo = forwardedTo;

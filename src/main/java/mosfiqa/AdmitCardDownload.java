@@ -2,7 +2,7 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal14 {
+public class AdmitCardDownload {
     private String examId;
     private String rollNumber;
     private String center;
@@ -50,7 +50,7 @@ public class goal14 {
                 '}';
     }
 
-    public goal14(String examId, String rollNumber, String center, LocalDate date) {
+    public AdmitCardDownload(String examId, String rollNumber, String center, LocalDate date) {
         this.examId = examId;
         this.rollNumber = rollNumber;
         this.center = center;

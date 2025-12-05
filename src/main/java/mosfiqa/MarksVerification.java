@@ -2,7 +2,7 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal6 {
+public class MarksVerification {
     private String examId, subject,roll,status;
     private int marks,totalMarks;
     private LocalDate uploadTime;
@@ -20,7 +20,7 @@ public class goal6 {
                 '}';
     }
 
-    public goal6(String examId, String subject, String roll, String status, int marks, int totalMarks, LocalDate uploadTime) {
+    public MarksVerification(String examId, String subject, String roll, String status, int marks, int totalMarks, LocalDate uploadTime) {
         this.examId = examId;
         this.subject = subject;
         this.roll = roll;

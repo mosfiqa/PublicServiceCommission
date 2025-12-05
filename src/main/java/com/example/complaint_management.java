@@ -1,5 +1,8 @@
 package com.example;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class complaint_management
 {
     @javafx.fxml.FXML
@@ -27,7 +30,11 @@ public class complaint_management
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void attachmentButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void addButton(ActionEvent actionEvent) {
     }
 }

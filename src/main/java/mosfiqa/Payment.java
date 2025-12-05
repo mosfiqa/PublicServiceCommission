@@ -2,7 +2,7 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal13 {
+public class Payment {
     private String paymentId;
     private String applicantId;
     private double amount;
@@ -70,7 +70,7 @@ public class goal13 {
                 '}';
     }
 
-    public goal13(String paymentId, String applicantId, double amount, LocalDate date, String transactionId, String method) {
+    public Payment(String paymentId, String applicantId, double amount, LocalDate date, String transactionId, String method) {
         this.paymentId = paymentId;
         this.applicantId = applicantId;
         this.amount = amount;

@@ -2,11 +2,11 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal3 {
+public class ExamSchedule {
     private String scheduleId,examTitle,circularId,subject,time,examCenter,room,invigilators;
     private LocalDate examDate;
 
-    public goal3(String scheduleId, String examTitle, String circularId, String subject, String time, String examCenter, String room, String invigilators, LocalDate examDate, int capacity) {
+    public ExamSchedule(String scheduleId, String examTitle, String circularId, String subject, String time, String examCenter, String room, String invigilators, LocalDate examDate, int capacity) {
         this.scheduleId = scheduleId;
         this.examTitle = examTitle;
         this.circularId = circularId;

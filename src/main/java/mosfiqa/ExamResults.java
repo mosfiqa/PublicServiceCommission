@@ -1,6 +1,6 @@
 package mosfiqa;
 
-public class goal15 {
+public class ExamResults {
     private String examId;
     private String roll;
     private int marks;
@@ -58,7 +58,7 @@ public class goal15 {
                 '}';
     }
 
-    public goal15(String examId, String roll, int marks, int totalMarks, String meritPosition) {
+    public ExamResults(String examId, String roll, int marks, int totalMarks, String meritPosition) {
         this.examId = examId;
         this.roll = roll;
         this.marks = marks;
