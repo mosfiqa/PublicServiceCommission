@@ -3,16 +3,14 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="852.0" prefWidth="1312.0" style="-fx-background-color: #191924;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.chearmen.ChairmanDashboardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="933.0" prefWidth="1587.0" style="-fx-background-color: #191924;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.chearmen.ChairmanDashboardController">
     <children>
-        <Label layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="1289.0" style="-fx-background-color: #242436;" text="Welcome , Commission Chairman" textFill="WHITE">
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="1565.0" style="-fx-background-color: #2C158A;" text="Welcome , Commission Chairman ( Sabbir Ahammed Khan )" textFill="WHITE">
             <font>
                 <Font name="Cambria Math" size="36.0" />
             </font>
@@ -22,129 +20,59 @@
         </Label>
 
 
-        <VBox layoutX="13.0" layoutY="78.0" prefHeight="766.0" prefWidth="249.0" style="-fx-background-color: #242436;">
+        <VBox layoutX="13.0" layoutY="78.0" prefHeight="846.0" prefWidth="249.0" style="-fx-background-color: #242436;">
             <children>
 
-                <Button mnemonicParsing="false" onAction="#handleFinalApproval" prefHeight="60.0" prefWidth="294.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text=" Final Marks Approval" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#handleFinalApproval" prefHeight="60.0" prefWidth="294.0" style="-fx-background-color: #242436; -fx-border-color: black;" text=" Final Marks Approval" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                    </font>
+                </Button>
+
+                <Button mnemonicParsing="false" onAction="#handleCandidateList" prefHeight="60.0" prefWidth="291.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Candidate List Publication" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="16.0" />
                     </font>
                 </Button>
 
-                <Button mnemonicParsing="false" onAction="#handleCandidateList" prefHeight="60.0" prefWidth="291.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text="Candidate List Publication" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#handlePolicyReview" prefHeight="60.0" prefWidth="305.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Policy Review &amp; Approval" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="16.0" />
                     </font>
                 </Button>
 
-                <Button mnemonicParsing="false" onAction="#handlePolicyReview" prefHeight="60.0" prefWidth="305.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text="Policy Review &amp; Approval" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#handleAuditReports" prefHeight="60.0" prefWidth="310.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Audit Report Viewer" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                    </font>
+                </Button>
+
+                <Button mnemonicParsing="false" onAction="#handleAnnualReportSignoff" prefHeight="60.0" prefWidth="310.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Annual Report Sign-off" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+
+                <Button mnemonicParsing="false" onAction="#handleScheduleChange" prefHeight="60.0" prefWidth="299.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Schedule Change Approval" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="16.0" />
                     </font>
                 </Button>
 
-                <Button mnemonicParsing="false" onAction="#handleAuditReports" prefHeight="60.0" prefWidth="310.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text="Audit Report Viewer" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#handleDisputeResolution" prefHeight="60.0" prefWidth="339.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="Dispute Resolution" textFill="WHITE">
                     <font>
-                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
                     </font>
                 </Button>
 
-                <Button mnemonicParsing="false" onAction="#handleAnnualReportSignoff" prefHeight="60.0" prefWidth="310.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text="Annual Report Sign-off" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#handleUserAccess" prefHeight="60.0" prefWidth="311.0" style="-fx-background-color: #242436; -fx-border-color: black;" text="User Access Control" textFill="WHITE">
                     <font>
-                        <Font name="Arial Rounded MT Bold" size="16.0" />
-                    </font>
-                </Button>
-
-                <Button mnemonicParsing="false" onAction="#handleScheduleChange" prefHeight="60.0" prefWidth="299.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text="Schedule Change Approval" textFill="WHITE">
-                    <font>
-                        <Font name="Arial Rounded MT Bold" size="16.0" />
-                    </font>
-                </Button>
-
-                <Button mnemonicParsing="false" onAction="#handleDisputeResolution" prefHeight="60.0" prefWidth="339.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text="Dispute Resolution" textFill="WHITE">
-                    <font>
-                        <Font name="Arial Rounded MT Bold" size="16.0" />
-                    </font>
-                </Button>
-
-                <Button mnemonicParsing="false" onAction="#handleUserAccess" prefHeight="60.0" prefWidth="311.0" style="-fx-background-color: #242436; -fx-border-color: #4b62d8; -fx-border-width: 0 0 1 0;" text="User Access Control" textFill="WHITE">
-                    <font>
-                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
                     </font>
                 </Button>
 
             </children>
         </VBox>
-
-
-        <AnchorPane layoutX="263.0" layoutY="78.0" prefHeight="766.0" prefWidth="1074.0" style="-fx-background-color: #242436;">
-            <children>
-
-                <HBox layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="1025.0" spacing="30.0">
-
-                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="326.0" style="-fx-background-color: #3E0061;">
-                        <Label text="PENDING MARK APPROVAL" textFill="WHITE">
-                            <font>
-                                <Font name="Arial Rounded MT Bold" size="18.0" />
-                            </font>
-                        </Label>
-                        <Label fx:id="pendingResultLabel" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
-                    </VBox>
-
-                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="334.0" style="-fx-background-color: #2C158A;">
-                        <children>
-                            <Label text="POLICY PROPOSALS (Goal 2)" textFill="WHITE">
-                                <font>
-                                    <Font name="Arial Rounded MT Bold" size="18.0" />
-                                </font>
-                            </Label>
-                            <Label fx:id="pendingPolicyLabel" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="WHITE" />
-                        </children>
-                    </VBox>
-
-                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="365.0" style="-fx-background-color: #0E0536;">
-                        <children>
-                            <Label text="OPEN DISPUTE CASES (Goal 5)" textFill="WHITE">
-                                <font>
-                                    <Font name="Arial Rounded MT Bold" size="18.0" />
-                                </font>
-                            </Label>
-                            <Label fx:id="openDisputeLabel" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="00" textFill="#FF5252" />
-                        </children>
-                    </VBox>
-                </HBox>
-
-
-                <Label layoutX="14.0" layoutY="150.0" text="Action Required: Pending Candidate List Approvals (Goal 4)" textFill="WHITE">
-                    <font>
-                        <Font name="System Bold" size="24.0" />
-                    </font>
-                </Label>
-                <TableView layoutX="14.0" layoutY="190.0" prefHeight="250.0" prefWidth="1025.0" style="-fx-background-color: #3e3e57; -fx-border-color: #2C158A;">
-                    <columns>
-                        <TableColumn prefWidth="300.0" text="Exam Title" />
-                        <TableColumn prefWidth="250.0" text="Last Action Date" />
-                        <TableColumn prefWidth="250.0" text="Verification Status" />
-                        <TableColumn prefWidth="224.0" text="Action" />
-                    </columns>
-                </TableView>
-
-
-                <Label layoutX="14.0" layoutY="460.0" text="Recent Audit Findings Summary (Goal 3 &amp; 7)" textFill="WHITE">
-                    <font>
-                        <Font name="System Bold" size="24.0" />
-                    </font>
-                </Label>
-                <TableView layoutX="14.0" layoutY="500.0" prefHeight="250.0" prefWidth="1025.0" style="-fx-background-color: #3e3e57; -fx-border-color: #0E0536;">
-                    <columns>
-                        <TableColumn prefWidth="300.0" text="Report Name" />
-                        <TableColumn prefWidth="150.0" text="Type" />
-                        <TableColumn prefWidth="150.0" text="Date" />
-                        <TableColumn prefWidth="200.0" text="Risk Level" />
-                        <TableColumn prefWidth="224.0" text="Action" />
-                    </columns>
-                </TableView>
-            </children>
-        </AnchorPane>
+      <BorderPane fx:id="dashboardBorderpane" layoutX="270.0" layoutY="78.0" prefHeight="846.0" prefWidth="1309.0" style="-fx-background-color: #242436;" />
     </children>
 </AnchorPane>

@@ -3,89 +3,113 @@ package sabbir.chearmen;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.stage.Stage;
-
-import java.io.IOException;
+import javafx.scene.layout.BorderPane;
 
 public class ChairmanDashboardController
 {
-    @FXML private Label openDisputeLabel;
-    @FXML private Label pendingPolicyLabel;
-    @FXML private Label pendingResultLabel;
+
+    @FXML
+    private BorderPane dashboardBorderpane;
 
     @FXML
     public void initialize() {
-        int pendingMarks = fetchPendingMarksCount();
-        int pendingPolicies = fetchPendingPolicyCount();
-        int openDisputes = fetchOpenDisputesCount();
 
-        pendingResultLabel.setText(String.format("%02d", pendingMarks));
-        pendingPolicyLabel.setText(String.format("%02d", pendingPolicies));
-        openDisputeLabel.setText(String.format("%02d", openDisputes));
-    }
-
-    private int fetchPendingMarksCount() { return 7; }
-    private int fetchPendingPolicyCount() { return 3; }
-    private int fetchOpenDisputesCount() { return 2; }
-
-    private void openNewStage(String fxmlFile, String title) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sabbir/chearmen/" + fxmlFile));
-            Stage newStage = new Stage();
-            Scene scene = new Scene(fxmlLoader.load());
-
-            newStage.setTitle(title);
-            newStage.setScene(scene);
-            newStage.show();
-        }
-        catch (IOException e){
-
-        }
     }
 
     @FXML
     public void handleFinalApproval(ActionEvent actionEvent) {
+        try{
 
-        openNewStage("finalmarksapprovalview.fxml", "Final Marks Approval (Goal 1)");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("finalmarksapprovalview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void handleCandidateList(ActionEvent actionEvent) {
-        openNewStage("candidatelistpublication.fxml", "Candidate List Publication (Goal 4)");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("candidatelistpublication.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void handlePolicyReview(ActionEvent actionEvent) {
-        openNewStage("policyreviewapproval.fxml", "Policy Review & Approval (Goal 2)");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("policyreviewapproval.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void handleAuditReports(ActionEvent actionEvent) {
-        openNewStage("auditreportview.fxml", "Audit Report Viewer (Goal 3)");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("auditreportview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void handleAnnualReportSignoff(ActionEvent actionEvent) {
-        openNewStage("annualreportsignoff.fxml", "Annual Report Sign-off (Goal 7)");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("annualreportsignoff.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void handleScheduleChange(ActionEvent actionEvent) {
+        try{
 
-        openNewStage("schedulechangeview.fxml", "Schedule Change Approval (Goal 6)");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("schedulechangeview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void handleDisputeResolution(ActionEvent actionEvent) {
+        try{
 
-        openNewStage("disputeresolutionview.fxml", "Dispute Resolution (Goal 5)");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("disputeresolutionview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void handleUserAccess(ActionEvent actionEvent) {
-        openNewStage("useraccesscontrol.fxml", "User Access Control (Goal 8)");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("useraccesscontrol.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
 

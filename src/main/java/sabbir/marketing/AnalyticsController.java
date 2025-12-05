@@ -1,9 +1,7 @@
 package sabbir.marketing;
 
 import javafx.event.ActionEvent;
-import javafx.scene.chart.CategoryAxis;
-import javafx.scene.chart.LineChart;
-import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
@@ -12,10 +10,6 @@ public class AnalyticsController
 {
     @javafx.fxml.FXML
     private ComboBox campaignSelector;
-    @javafx.fxml.FXML
-    private NumberAxis yAxis;
-    @javafx.fxml.FXML
-    private CategoryAxis xAxis;
     @javafx.fxml.FXML
     private Label conversionRateLabel;
     @javafx.fxml.FXML
@@ -29,7 +23,7 @@ public class AnalyticsController
     @javafx.fxml.FXML
     private ComboBox timePeriodSelector;
     @javafx.fxml.FXML
-    private LineChart performanceChart;
+    private PieChart performancechart;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -39,6 +33,5 @@ public class AnalyticsController
 
     @javafx.fxml.FXML
     public void handleGenerateReport(ActionEvent actionEvent) {
-        System.out.println("Report Requested: " + campaignSelector.getValue() + " / " + timePeriodSelector.getValue());
     }
 }

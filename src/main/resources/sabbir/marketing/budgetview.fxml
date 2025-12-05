@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" style="-fx-background-color: #191924;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.marketing.BudgetController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" style="-fx-background-color: #191924;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.marketing.BudgetController">
     <children>
         <VBox layoutX="14.0" layoutY="14.0" prefHeight="772.0" prefWidth="1072.0" spacing="20.0" style="-fx-background-color: #242436;">
             <children>
@@ -80,7 +80,7 @@
                                 <Font name="Arial Rounded MT Bold" size="16.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="amountField" prefHeight="35.0" prefWidth="150.0" promptText="e.g., 20000" style="-fx-background-color: #191924; -fx-text-fill: white; -fx-border-color: #555555; -fx-border-radius: 5;" />
+                        <TextField fx:id="amountField" prefHeight="35.0" prefWidth="150.0" promptText="00" style="-fx-background-color: #191924; -fx-text-fill: white; -fx-border-color: #555555; -fx-border-radius: 5;" />
                         <Button mnemonicParsing="false" onAction="#handleAllocateBudget" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4CAF50;" text="Allocate Budget" textFill="WHITE">
                             <font>
                                 <Font name="Arial Rounded MT Bold" size="16.0" />
