@@ -17,17 +17,17 @@ public class AdminDashboardController
 
     @FXML
     public void logoutButtonOnAction(ActionEvent actionEvent) {
-        loadScene("/com/example/msv3_2310898/admin_login.fxml", event);
+        loadScene("admin_login.fxml",);
     }
 
     @FXML
     public void ViewLogsButtonOnAction(ActionEvent actionEvent) {
-        loadScene("/com/example/msv3_2310898/admin_log_monitor.fxml", event);
+        loadScene("admin_log_monitor.fxml",loadScene(admin_log_monitor.fxml););
     }
 
     @FXML
     public void ManageUsersButtonOnAction(ActionEvent actionEvent) {
-        loadScene("/com/example/msv3_2310898/admin_user_management.fxml", event);
+        loadScene("admin_user_management.fxml", event);
     }
 
     @FXML
