@@ -24,9 +24,9 @@
       <TextArea fx:id="remarkTA" layoutX="578.0" layoutY="94.0" prefHeight="97.0" prefWidth="200.0" />
       <Text layoutX="513.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="1.0" />
       <Text layoutX="514.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="remarks" />
-      <Button layoutX="402.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleNIDButton" text="View NID File" />
-      <Button layoutX="367.0" layoutY="45.0" mnemonicParsing="false" onAction="#PhotoButton" text="View PhotoButton" />
-      <Button layoutX="369.0" layoutY="104.0" mnemonicParsing="false" onAction="#handlecertificateButton" text=" CertificateButton" />
+      <Button layoutX="402.0" layoutY="161.0" mnemonicParsing="false" onAction="#saveButton" text="save" />
+      <Button layoutX="367.0" layoutY="45.0" mnemonicParsing="false" onAction="#searchButton" text="search" />
+      <Button layoutX="369.0" layoutY="104.0" mnemonicParsing="false" onAction="#viewButton" text=" view" />
       <TableView fx:id="ApplicantTableView" layoutX="29.0" layoutY="241.0" prefHeight="200.0" prefWidth="572.0">
         <columns>
           <TableColumn fx:id="AIDTableCOL" prefWidth="130.3999900817871" text="Applicant ID" />
