@@ -5,7 +5,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.downloadController">
    <children>
       <TableView fx:id="downloadTV" layoutX="84.0" layoutY="155.0" prefHeight="200.0" prefWidth="594.0">
@@ -17,7 +16,8 @@
             <TableColumn fx:id="downloadTCOL" prefWidth="126.39999999999998" text="Download Button" />
         </columns>
       </TableView>
-      <Button layoutX="58.0" layoutY="38.0" mnemonicParsing="false" onAction="#examButton" text="Load Eligible Exams" />
-      <Button layoutX="263.0" layoutY="38.0" mnemonicParsing="false" onAction="#admitCardButton" text="Download Admit Card" />
+      <Button layoutX="58.0" layoutY="38.0" mnemonicParsing="false" onAction="#searchButton" text="search" />
+      <Button layoutX="263.0" layoutY="38.0" mnemonicParsing="false" onAction="#handlesaveButton" text="save" />
+      <Button layoutX="372.0" layoutY="25.0" mnemonicParsing="false" onAction="#handlebackButton" text="back" />
    </children>
 </AnchorPane>
