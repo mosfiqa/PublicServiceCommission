@@ -55,7 +55,4 @@ public class Question {
                 '}';
     }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> edf9a20480fa0e4280e9fae33fce03d9bef57143
