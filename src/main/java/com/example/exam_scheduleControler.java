@@ -76,7 +76,29 @@ public class exam_scheduleControler
     public void saveButton(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void approveButton(ActionEvent actionEvent) {
     }
+}
+@javafx.fxml.FXML
+private TableColumn totalTCOL;
+@javafx.fxml.FXML
+private ComboBox SubjectCBOX;
+@javafx.fxml.FXML
+private TableColumn rollno;
+@javafx.fxml.FXML
+private TableColumn statusTCOL;
+@javafx.fxml.FXML
+private ComboBox ExamIDCBOX;
+@javafx.fxml.FXML
+private TableView marksTview;
+@javafx.fxml.FXML
+private TableColumn marksTCOL;
+
+@javafx.fxml.FXML
+public void searchButton(ActionEvent actionEvent) {
+}
+
+@javafx.fxml.FXML
+public void viewButton(ActionEvent actionEvent) {
 }

@@ -22,7 +22,7 @@
                </columns>
             </TableView>
             <Button layoutX="527.0" layoutY="77.0" mnemonicParsing="false" onAction="#viewButton" text="View" />
-            <Button layoutX="527.0" layoutY="116.0" mnemonicParsing="false" onAction="#saveButton" text="Save to File" />
+            <Button layoutX="527.0" layoutY="116.0" mnemonicParsing="false" onAction="#saveButton" text="Save" />
             <Button layoutX="527.0" layoutY="154.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
          </children>
       </AnchorPane>
