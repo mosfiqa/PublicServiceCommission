@@ -14,7 +14,6 @@ public class ChartController {
 
     @FXML
     public void initialize() {
-        // Optional: You can load data automatically here if you want
     }
 
     @FXML

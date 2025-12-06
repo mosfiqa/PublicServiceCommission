@@ -12,7 +12,6 @@ public class AccountsDashboardController {
 
     @FXML private BorderPane dashboardBorderPane;
 
-    // All 8 Button FXML fields (Must match FXML fx:id)
     @FXML private Button verifyPaymentButton;
     @FXML private Button generateReceiptsButton;
     @FXML private Button processRefundsButton;
@@ -25,7 +24,6 @@ public class AccountsDashboardController {
     @FXML
     public void initialize() {}
 
-    // --- BUTTON METHODS (Final Linking) ---
 
     @FXML public void verifyPaymentButtonOnAction(ActionEvent event) { loadView("PaymentVerification.fxml"); }
     @FXML public void generateReceiptsButtonOnAction(ActionEvent event) { loadView("ReceiptGenerator.fxml"); }
@@ -37,15 +35,12 @@ public class AccountsDashboardController {
     @FXML public void monitorAnomaliesButtonOnAction(ActionEvent event) { loadView("AnomalyMonitoring.fxml"); }
 
 
-    // --- SAFEST LOAD VIEW HELPER (Fixes Pathing Issues) ---
     private void loadView(String fxmlFileName) {
         try {
-            // We use the full absolute path and check if the file exists
             String path = "/ela/accounts_officer/" + fxmlFileName;
             URL fileUrl = getClass().getResource(path);
 
             if (fileUrl == null) {
-                // Critical Alert: Shows the user exactly which file is missing
                 throw new java.io.FileNotFoundException("FXML file not found at: " + path);
             }
 
