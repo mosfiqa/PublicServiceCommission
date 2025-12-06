@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ela.accounts_officer.PaymentVerificationController">
+    <children>
+        <Label layoutX="32.0" layoutY="31.0" text="Accounts Officer: Payment Verification">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="32.0" layoutY="85.0" text="Search Transaction:" />
+
+        <TextField fx:id="searchTextField" layoutX="150.0" layoutY="81.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter ID to filter..." />
+
+        <Button fx:id="searchButton" layoutX="380.0" layoutY="81.0" mnemonicParsing="false" onAction="#searchButtonOnAction" text="Filter / Search" />
+
+        <TableView fx:id="paymentTableView" layoutX="32.0" layoutY="130.0" prefHeight="280.0" prefWidth="736.0">
+            <columns>
+                <TableColumn fx:id="transactionIdTablecolumn" prefWidth="180.0" text="Transaction ID" />
+                <TableColumn fx:id="applicantIdTablecolumn" prefWidth="180.0" text="Applicant ID" />
+                <TableColumn fx:id="amountTablecolumn" prefWidth="150.0" text="Amount (Taka)" />
+                <TableColumn fx:id="statusTablecolumn" prefWidth="180.0" text="Payment Status" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="verifyButton" layoutX="600.0" layoutY="455.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" prefHeight="40.0" prefWidth="168.0" text="Verify Selected Payment" textFill="#009414">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+        <Label layoutX="32.0" layoutY="430.0" text="System Feedback / Verification Logs:" />
+
+        <TextArea fx:id="feedbackTextArea" editable="false" layoutX="32.0" layoutY="455.0" prefHeight="100.0" prefWidth="550.0" wrapText="true" />
+
+    </children>
+</AnchorPane>

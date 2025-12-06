@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #242436;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.chearmen.DisputeResolutionController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #242436;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabbir.chearmen.DisputeResolutionController">
     <children>
         <VBox layoutX="20.0" layoutY="20.0" prefHeight="760.0" prefWidth="960.0">
             <children>
-                <Label text="Dispute Resolution (Goal 5)" textFill="WHITE">
+                <Label prefHeight="34.0" prefWidth="960.0" style="-fx-background-color: #2C158A;" text="Dispute Resolution" textFill="WHITE">
                     <font>
                         <Font name="Cambria Math" size="30.0" />
                     </font>
@@ -57,7 +57,7 @@
 
                 <VBox prefHeight="350.0" prefWidth="960.0" style="-fx-background-color: #3e3e57; -fx-padding: 15;">
                     <children>
-                        <Label text="Selected Case: [Select a case from the table above]" fx:id="selectedCaseLabel" textFill="#FFC107">
+                        <Label fx:id="selectedCaseLabel" text="Selected Case:" textFill="#FFC107">
                             <font>
                                 <Font name="Arial Bold" size="16.0" />
                             </font>
@@ -65,7 +65,7 @@
                                 <Insets bottom="10.0" />
                             </VBox.margin>
                         </Label>
-                        <TextArea fx:id="resolutionSummaryArea" editable="false" prefHeight="280.0" prefWidth="930.0" promptText="Summary of the dispute, evidence, legal review, and proposed final resolution." style="-fx-control-inner-background: #191924; -fx-text-fill: #E0E0E0;" VBox.vgrow="ALWAYS">
+                        <TextArea fx:id="resolutionSummaryArea" editable="false" prefHeight="280.0" prefWidth="930.0" style="-fx-control-inner-background: #191924; -fx-text-fill: #E0E0E0;" VBox.vgrow="ALWAYS">
                             <font>
                                 <Font name="Arial" size="14.0" />
                             </font>

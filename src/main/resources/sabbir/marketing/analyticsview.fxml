@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -84,15 +82,7 @@
                         <Label fx:id="successRateLabel" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="0%" textFill="#3498db" />
                     </VBox>
                 </HBox>
-
-                <LineChart fx:id="performanceChart" prefHeight="350.0" prefWidth="1132.0" style="-fx-background-color: #191924;" title="Daily Application Trend (Last 30 Days)">
-                    <xAxis>
-                        <CategoryAxis label="Date" side="BOTTOM" fx:id="xAxis" />
-                    </xAxis>
-                    <yAxis>
-                        <NumberAxis fx:id="yAxis" label="Applications/Clicks" side="LEFT" />
-                    </yAxis>
-                </LineChart>
+            <PieChart fx:id="performancechart" />
 
                 <Label text="Detailed Report Data" textFill="WHITE">
                     <font>

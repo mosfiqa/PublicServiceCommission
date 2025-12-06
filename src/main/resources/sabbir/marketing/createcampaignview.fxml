@@ -32,7 +32,7 @@
                                 <Font name="Arial Rounded MT Bold" size="16.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="campaignNameField" prefHeight="30.0" prefWidth="850.0" promptText="e.g., Spring 2026 Recruitment" style="-fx-background-color: #3e3e57; -fx-text-fill: white;" />
+                        <TextField fx:id="campaignNameField" prefHeight="30.0" prefWidth="850.0" promptText="Enter Name" style="-fx-background-color: #3e3e57; -fx-text-fill: white;" />
                     </children>
                 </HBox>
                 <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="1013.0" spacing="10.0">
@@ -52,7 +52,7 @@
                                 <Font name="Arial Rounded MT Bold" size="16.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="targetAudienceField" prefHeight="30.0" prefWidth="400.0" promptText="e.g., Engineers, Recent Graduates" style="-fx-background-color: #3e3e57; -fx-text-fill: white;" />
+                        <TextField fx:id="targetAudienceField" prefHeight="30.0" prefWidth="400.0" style="-fx-background-color: #3e3e57; -fx-text-fill: white;" />
                     </children>
                 </HBox>
                 <Label text="Campaign Description / Strategy:" textFill="WHITE">
@@ -60,7 +60,7 @@
                         <Font name="Arial Rounded MT Bold" size="16.0" />
                     </font>
                 </Label>
-                <TextArea fx:id="descriptionTextArea" prefHeight="100.0" prefWidth="1013.0" promptText="Outline the main strategy and goals for this campaign." style="-fx-background-color: #3e3e57; -fx-text-fill: white;" wrapText="true" />
+                <TextArea fx:id="descriptionTextArea" prefHeight="100.0" prefWidth="1013.0" promptText="Description...." style="-fx-background-color: #3e3e57; -fx-text-fill: white;" wrapText="true" />
                 <Separator prefWidth="200.0" />
                 <Label text="Budget &amp; Timeline" textFill="WHITE">
                     <font>
@@ -69,12 +69,12 @@
                 </Label>
                 <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="1013.0" spacing="10.0">
                     <children>
-                        <Label prefWidth="150.0" text="Allocated Budget (BDT):" textFill="WHITE">
+                        <Label prefHeight="20.0" prefWidth="152.0" text="Allocated Budget :" textFill="WHITE">
                             <font>
                                 <Font name="Arial Rounded MT Bold" size="16.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="budgetField" prefHeight="30.0" prefWidth="250.0" promptText="e.g., 500000" style="-fx-background-color: #3e3e57; -fx-text-fill: white;" />
+                        <TextField fx:id="budgetField" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: #3e3e57; -fx-text-fill: white;" />
                     </children>
                 </HBox>
                 <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="1013.0" spacing="10.0">
@@ -94,12 +94,12 @@
                     </children>
                 </HBox>
                 <Separator prefWidth="200.0" />
-                <Label text="Marketing Channels (e.g., Social, Print, Event):" textFill="WHITE">
+                <Label text="Marketing Channels :" textFill="WHITE">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="16.0" />
                     </font>
                 </Label>
-                <TextArea fx:id="channelsTextArea" prefHeight="100.0" prefWidth="1013.0" promptText="List the primary channels and their planned use." style="-fx-background-color: #3e3e57; -fx-text-fill: white;" wrapText="true" />
+                <TextArea fx:id="channelsTextArea" prefHeight="100.0" prefWidth="1013.0" promptText="Type Hear..." style="-fx-background-color: #3e3e57; -fx-text-fill: white;" wrapText="true" />
                 <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="1013.0" spacing="15.0">
                     <children>
                         <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #FF5252;" text="Cancel" textFill="WHITE">

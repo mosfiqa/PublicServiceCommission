@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ela.logistics_officer.CenterManagementController">
+    <children>
+        <Label layoutX="32.0" layoutY="31.0" text="Logistics: Center Allocation Management">
+            <font><Font name="System Bold" size="24.0" /></font>
+        </Label>
+
+        <Label layoutX="32.0" layoutY="85.0" text="Search Center:" />
+
+        <TextField fx:id="searchTextField" layoutX="140.0" layoutY="81.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter Center Name or ID..." />
+
+        <Button fx:id="searchButton" onAction="#searchButtonOnAction" layoutX="370.0" layoutY="81.0" mnemonicParsing="false" text="Search" />
+
+        <TableView fx:id="centerTableview" layoutX="32.0" layoutY="120.0" prefHeight="300.0" prefWidth="736.0">
+            <columns>
+                <TableColumn fx:id="centerIdTablecolumn" prefWidth="120.0" text="Center ID" />
+                <TableColumn fx:id="centerNameTablecolumn" prefWidth="300.0" text="Center Name" />
+                <TableColumn fx:id="capacityTablecolumn" prefWidth="150.0" text="Capacity" />
+                <TableColumn fx:id="statusTablecolumn" prefWidth="160.0" text="Allocation Status" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="allocateButton" layoutX="550.0" layoutY="440.0" onAction="#allocateButtonOnAction" prefHeight="40.0" prefWidth="218.0" text="Allocate Selected Center" textFill="BLUE">
+            <font><Font name="System Bold" size="13.0" /></font>
+        </Button>
+
+        <Label fx:id="statusLabel" layoutX="32.0" layoutY="440.0" text="System Status: Ready" textFill="GREY">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>

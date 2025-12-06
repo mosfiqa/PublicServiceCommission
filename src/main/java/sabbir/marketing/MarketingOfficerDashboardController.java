@@ -3,27 +3,13 @@ package sabbir.marketing;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.IOException;
+import javafx.scene.layout.BorderPane;
 
 public class MarketingOfficerDashboardController
 {
-    private void openNewStage(String fxmlFile, String title) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sabbir/marketing/" + fxmlFile));
-            Stage newStage = new Stage();
-            Scene scene = new Scene(fxmlLoader.load());
+    @FXML
+    private BorderPane dashboardBorderpane;
 
-            newStage.setTitle(title);
-            newStage.setScene(scene);
-            newStage.show();
-        }
-        catch (IOException e){
-
-        }
-    }
 
     @FXML
     public void initialize() {
@@ -31,61 +17,74 @@ public class MarketingOfficerDashboardController
 
     @FXML
     public void createcampaingbutton(ActionEvent actionEvent) {
-        openNewStage("createcampaignview.fxml", "Create Campaing");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createcampaignview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void analyticsbutton(ActionEvent actionEvent) {
-        openNewStage("analyticsview.fxml", "Campaign Analytics & Reporting");
-    }
+        try{
 
-    @FXML
-    public void quickcreaterecruitmentcampaignbutton(ActionEvent actionEvent) {
-        createcampaingbutton(actionEvent);
-    }
-
-    @FXML
-    public void quickpublishnewcircularbutton(ActionEvent actionEvent) {
-        publishcircularbutton(actionEvent);
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("analyticsview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void eventbutton(ActionEvent actionEvent) {
-        openNewStage("eventview.fxml", "Event Planning & Management");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("eventview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void publishcircularbutton(ActionEvent actionEvent){
-        openNewStage("publishcircularview.fxml", "Publish Circular");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("publishcircularview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
-    @FXML
-    public void quickplaneventbutton(ActionEvent actionEvent) {
-        eventbutton(actionEvent);
-    }
-
-    @FXML
-    public void candidateexperiancebutton(ActionEvent actionEvent) {
-        openNewStage("candidateexperienceview.fxml", "Candidate Experience Review");
-    }
 
     @FXML
     public void budgetbutton(ActionEvent actionEvent) {
-        openNewStage("eventview.fxml", "Budget Tracking & Management");
-    }
+        try{
 
-    @FXML
-    public void quickanalyticsreportbutton(ActionEvent actionEvent) {
-        analyticsbutton(actionEvent);
-    }
-
-    @FXML
-    public void contentbutton(ActionEvent actionEvent) {
-        openNewStage("contentview.fxml", "Content Management System");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("budgetview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 
     @FXML
     public void socialmediabutton(ActionEvent actionEvent) {
-        openNewStage("socialmediaview.fxml", "Social Media");
+        try{
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("socialmediaview.fxml"));
+            dashboardBorderpane.setCenter(fxmlLoader.load());
+        }
+        catch (Exception e){
+            //
+        }
     }
 }

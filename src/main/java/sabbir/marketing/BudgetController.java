@@ -1,10 +1,7 @@
 package sabbir.marketing;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class BudgetController
 {
@@ -22,6 +19,16 @@ public class BudgetController
     private Label totalSpentLabel;
     @javafx.fxml.FXML
     private TextField amountField;
+    @javafx.fxml.FXML
+    private TableColumn statustablecoloum;
+    @javafx.fxml.FXML
+    private TableColumn amounttablecoloum;
+    @javafx.fxml.FXML
+    private TableColumn typetablecoloum;
+    @javafx.fxml.FXML
+    private TableColumn datetablecoloum;
+    @javafx.fxml.FXML
+    private TableColumn targettablecoloum;
 
     @javafx.fxml.FXML
     public void initialize() {
