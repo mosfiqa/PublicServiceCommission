@@ -5,20 +5,21 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class marketingdata implements Serializable {
-    private String circularTitle, postName, jobDescription, jobEligibility, campaingname, audiance, circularname, campaingdiscription, campaingchennel;
+    private String circularTitle, postName, jobDescription, jobEligibility, campaingname, audiance, circularname, campaingdiscription, campaingchennel, status;
     private int vacancy, budget;
     private LocalDate Sdate, Edate, startdate, enddate;
 
-    public marketingdata(String circularTitle, String postName, String jobDescription, String jobEligibility, String campaingname, String audiance, String circularname, String campaingdiscription, String campaingchennel, int vacancy, int budget, LocalDate sdate, LocalDate edate, LocalDate startdate, LocalDate enddate) {
+    public marketingdata(String circularTitle, String postName, String jobDescription, String jobEligibility, String campaingname, String audiance, String campaingdiscription, String circularname, String campaingchennel, String status, int vacancy, int budget, LocalDate sdate, LocalDate edate, LocalDate startdate, LocalDate enddate) {
         this.circularTitle = circularTitle;
         this.postName = postName;
         this.jobDescription = jobDescription;
         this.jobEligibility = jobEligibility;
         this.campaingname = campaingname;
         this.audiance = audiance;
-        this.circularname = circularname;
         this.campaingdiscription = campaingdiscription;
+        this.circularname = circularname;
         this.campaingchennel = campaingchennel;
+        this.status = status;
         this.vacancy = vacancy;
         this.budget = budget;
         Sdate = sdate;
@@ -99,6 +100,14 @@ public class marketingdata implements Serializable {
         this.campaingchennel = campaingchennel;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public int getVacancy() {
         return vacancy;
     }
@@ -159,6 +168,7 @@ public class marketingdata implements Serializable {
                 ", circularname='" + circularname + '\'' +
                 ", campaingdiscription='" + campaingdiscription + '\'' +
                 ", campaingchennel='" + campaingchennel + '\'' +
+                ", status='" + status + '\'' +
                 ", vacancy=" + vacancy +
                 ", budget=" + budget +
                 ", Sdate=" + Sdate +

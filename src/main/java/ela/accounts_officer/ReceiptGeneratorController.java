@@ -26,7 +26,6 @@ public class ReceiptGeneratorController {
 
     @javafx.fxml.FXML
     public void generateReceiptOnAction(ActionEvent actionEvent) {
-        // Simple preview logic
         String receipt = "--- PAYMENT RECEIPT ---\n" +
                 "Txn ID: " + txnIdField.getText() + "\n" +
                 "Amount: " + amountField.getText() + " BDT\n" +
@@ -39,7 +38,6 @@ public class ReceiptGeneratorController {
     @javafx.fxml.FXML
     public void saveToTextFileOnAction(ActionEvent actionEvent) {
         try {
-            // Teacher Style: Create File and FileWriter
             File f = new File("Receipts_Log.txt");
             FileWriter fw;
 
