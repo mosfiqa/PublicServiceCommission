@@ -1,11 +1,11 @@
 package mosfiqa;
 
-public class goal5 {
+public class ExaminerAssignment {
     private String assignmentId;
     private String examId;
     private String subject;
 
-    public goal5(String assignmentId, String examId, String subject, String examinerName) {
+    public ExaminerAssignment(String assignmentId, String examId, String subject, String examinerName) {
         this.assignmentId = assignmentId;
         this.examId = examId;
         this.subject = subject;

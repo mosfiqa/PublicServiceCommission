@@ -98,7 +98,7 @@
                     <columns>
                         <TableColumn fx:id="datetablecoloum" prefWidth="150.0" text="Date" />
                         <TableColumn fx:id="targettablecoloum" prefWidth="300.0" text="Target/Campaign" />
-                        <TableColumn fx:id="typetablecoloum" prefWidth="200.0" text="Type" />
+                        <TableColumn fx:id="typetablecoloum" prefWidth="200.0" text="Discription" />
                         <TableColumn fx:id="amounttablecoloum" prefWidth="150.0" text="Amount (Tk)" />
                         <TableColumn fx:id="statustablecoloum" prefWidth="260.0" text="Status" />
                     </columns>

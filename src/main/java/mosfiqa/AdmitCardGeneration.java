@@ -2,7 +2,7 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal4 {
+public class AdmitCardGeneration {
     private String applicantId,name,rollNumber,examId,center;
     private LocalDate date;
 
@@ -66,7 +66,7 @@ public class goal4 {
                 '}';
     }
 
-    public goal4(String name, String applicantId, String rollNumber, String examId, String center, LocalDate date) {
+    public AdmitCardGeneration(String name, String applicantId, String rollNumber, String examId, String center, LocalDate date) {
         this.name = name;
         this.applicantId = applicantId;
         this.rollNumber = rollNumber;

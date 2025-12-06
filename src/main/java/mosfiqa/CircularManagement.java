@@ -1,19 +1,16 @@
 package mosfiqa;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class goal1 {
-    private String circularId,title,department,description;
+public class CircularManagement implements Serializable {
+    private String title,department,description;
     private int vacancy;
     private LocalDate deadline;
 
-    public String getCircularId() {
-        return circularId;
-    }
 
-    public void setCircularId(String circularId) {
-        this.circularId = circularId;
-    }
+
+
 
     public String getTitle() {
         return title;
@@ -55,8 +52,8 @@ public class goal1 {
         this.deadline = deadline;
     }
 
-    public goal1(String circularId, String title, String department, String description, int vacancy, LocalDate deadline) {
-        this.circularId = circularId;
+    public CircularManagement(String circularId, String title, String department, String description, int vacancy, LocalDate deadline) {
+
         this.title = title;
         this.department = department;
         this.description = description;
@@ -71,7 +68,7 @@ public class goal1 {
     @Override
     public String toString() {
         return "goal1{" +
-                "circularId='" + circularId + '\'' +
+
                 ", title='" + title + '\'' +
                 ", department='" + department + '\'' +
                 ", description='" + description + '\'' +

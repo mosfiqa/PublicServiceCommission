@@ -2,7 +2,7 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal8 {
+public class ReportGeneration {
 
     private String reportType,circularId,examID,generatedOn;
     private LocalDate fromDate,toDate;
@@ -67,7 +67,7 @@ public class goal8 {
                 '}';
     }
 
-    public goal8(String reportType, String circularId, String examID, String generatedOn, LocalDate fromDate, LocalDate toDate) {
+    public ReportGeneration(String reportType, String circularId, String examID, String generatedOn, LocalDate fromDate, LocalDate toDate) {
         this.reportType = reportType;
         this.circularId = circularId;
         this.examID = examID;

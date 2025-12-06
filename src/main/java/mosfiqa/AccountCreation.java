@@ -1,12 +1,13 @@
 package mosfiqa;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class goal9 {
+public class AccountCreation implements Serializable {
     private String name,email,nid,password;
     private LocalDate dob;
 
-    public goal9(String name, String email, String nid, String password, LocalDate dob) {
+    public AccountCreation(String name, String email, String nid, String password, LocalDate dob) {
         this.name = name;
         this.email = email;
         this.nid = nid;

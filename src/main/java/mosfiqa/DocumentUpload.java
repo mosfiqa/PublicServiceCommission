@@ -1,7 +1,7 @@
 package mosfiqa;
 
-public class goal12 {
-    public goal12(String applicantId, boolean photoUploaded, boolean nidUploaded, boolean certificateUploaded, boolean experienceUploaded) {
+public class DocumentUpload {
+    public DocumentUpload(String applicantId, boolean photoUploaded, boolean nidUploaded, boolean certificateUploaded, boolean experienceUploaded) {
         this.applicantId = applicantId;
         this.photoUploaded = photoUploaded;
         this.nidUploaded = nidUploaded;

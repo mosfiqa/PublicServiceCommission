@@ -2,12 +2,12 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal2 {
+public class ApplicantVerification {
     private String applicantId,name,status,nid,qualification;
     private LocalDate dob;
     private boolean paymentVerified;
 
-    public goal2(String applicantId, String name, String status, String nid, String qualification, LocalDate dob, boolean paymentVerified) {
+    public ApplicantVerification(String applicantId, String name, String status, String nid, String qualification, LocalDate dob, boolean paymentVerified) {
         this.applicantId = applicantId;
         this.name = name;
         this.status = status;

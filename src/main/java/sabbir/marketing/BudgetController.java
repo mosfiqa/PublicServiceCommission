@@ -2,6 +2,9 @@ package sabbir.marketing;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.util.ArrayList;
 
 public class BudgetController
 {
@@ -29,9 +32,17 @@ public class BudgetController
     private TableColumn datetablecoloum;
     @javafx.fxml.FXML
     private TableColumn targettablecoloum;
-
+    ArrayList<marketingdata> budgetpage;
     @javafx.fxml.FXML
     public void initialize() {
+    budgetpage = new ArrayList<>();
+    statustablecoloum.setCellValueFactory(new PropertyValueFactory<marketingdata, String>("status"));
+    amounttablecoloum.setCellValueFactory(new PropertyValueFactory<marketingdata, String>("budget"));
+    typetablecoloum.setCellValueFactory(new PropertyValueFactory<marketingdata, String>("campaingdiscription"));
+    datetablecoloum.setCellValueFactory(new PropertyValueFactory<marketingdata, String>("sdate"));
+    targettablecoloum.setCellValueFactory(new PropertyValueFactory<marketingdata, String>("campaingname"));
+    budgetpage.add(marketingdata);
+    transactionTableView.getItems().add(marketingdata);
     }
 
     @javafx.fxml.FXML

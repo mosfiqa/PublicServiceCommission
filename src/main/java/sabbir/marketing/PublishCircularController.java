@@ -1,6 +1,7 @@
 package sabbir.marketing;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 import java.io.File;
@@ -10,30 +11,30 @@ import java.util.ArrayList;
 
 public class PublishCircularController
 {
-    @javafx.fxml.FXML
+    @FXML
     private DatePicker deadlinePicker;
-    @javafx.fxml.FXML
+    @FXML
     private TextArea eligibilityTextArea;
-    @javafx.fxml.FXML
+    @FXML
     private DatePicker startDatePicker;
-    @javafx.fxml.FXML
+    @FXML
     private TextField circularTitleField;
-    @javafx.fxml.FXML
+    @FXML
     private TextArea descriptionTextArea;
-    @javafx.fxml.FXML
+    @FXML
     private TextField vacanciesField;
-    @javafx.fxml.FXML
+    @FXML
     private ComboBox postNameComboBox;
 
     ArrayList<marketingdata> marketingdata;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
         postNameComboBox.getItems().addAll("Senior Officer", "Assistant Director", "Marketing Executive", "Software Engineer");
         marketingdata = new ArrayList<marketingdata>();
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleCancel(ActionEvent actionEvent) {
     eligibilityTextArea.clear();
     vacanciesField.clear();
@@ -42,7 +43,7 @@ public class PublishCircularController
     postNameComboBox.setValue("");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handlePublishCircular(ActionEvent actionEvent) {
         if(
         eligibilityTextArea.getText().isEmpty()||
@@ -57,16 +58,16 @@ public class PublishCircularController
         }
         else {
             try{
-                File f = new File("marketingdata.bin");
-                FileOutputStream fos = null;
+                File marketing = new File("marketingdata.bin");
+                FileOutputStream FOS = null;
                 ObjectOutputStream oos = null;
-                if(f.exists()){
-                    fos = new FileOutputStream(f, true);
-                    oos = new AppendableObjectOutputStream(fos);
+                if(marketing.exists()){
+                    FOS = new FileOutputStream(marketing, true);
+                    oos = new AppendableObjectOutputStream(FOS);
                 }
                 else{
-                    fos = new FileOutputStream(f);
-                    oos = new ObjectOutputStream(fos);
+                    FOS = new FileOutputStream(marketing);
+                    oos = new ObjectOutputStream(FOS);
                 }
                 for(marketingdata c: marketingdata){
                     oos.writeObject(c);
@@ -77,9 +78,19 @@ public class PublishCircularController
             }
         }
 
+        marketingdata marketing = new marketingdata(
+                circularTitleField.getText(),
+                postNameComboBox.getValue(),
+                descriptionTextArea.getText(),
+                startDatePicker.getValue(),
+                deadlinePicker.getValue(),
+                vacanciesField.getText(),
+                eligibilityTextArea.getText()
+        );
+
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleSaveDraft(ActionEvent actionEvent) {
     }
 }

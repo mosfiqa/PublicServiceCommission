@@ -9,25 +9,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="572.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.circularmanagmentController">
    <children>
-      <TextField fx:id="nameTF" layoutX="87.0" layoutY="51.0" />
-      <TextField fx:id="nameTF1" layoutX="75.0" layoutY="95.0" />
-      <TextField fx:id="nameTF11" layoutX="69.0" layoutY="148.0" />
+      <TextField fx:id="JobTitleTF" layoutX="87.0" layoutY="51.0" />
+      <TextField fx:id="DepartmentTF1" layoutX="87.0" layoutY="97.0" />
+      <TextField fx:id="VacancyTF11" layoutX="69.0" layoutY="148.0" />
       <Text fx:id="De" layoutX="25.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Title" />
       <Text layoutX="25.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="VacancyTF" layoutX="14.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacancy" />
-      <Text fx:id="DeadlineDatePicker" layoutX="14.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline" />
+      <Text fx:id="VacancyTF" layoutX="14.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacancy" />
+      <Text fx:id="DeadlineDatePicker" layoutX="14.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dateline" />
       <Text fx:id="DepartmentTF" layoutX="14.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
-      <DatePicker layoutX="63.0" layoutY="197.0" />
-      <TextArea layoutX="530.0" layoutY="16.0" prefHeight="94.0" prefWidth="200.0" />
-      <TextArea layoutX="530.0" layoutY="139.0" prefHeight="94.0" prefWidth="200.0" />
+      <DatePicker fx:id="datePicker" layoutX="63.0" layoutY="197.0" />
+      <TextArea fx:id="qualificationLabel" layoutX="530.0" layoutY="16.0" prefHeight="94.0" prefWidth="200.0" />
+      <TextArea fx:id="descriptionLabel" layoutX="530.0" layoutY="139.0" prefHeight="94.0" prefWidth="200.0" />
       <Text fx:id="QualificationTA" layoutX="445.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qualification" />
       <Text fx:id="DescriptionTA" layoutX="432.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
-      <Button layoutX="300.0" layoutY="97.0" mnemonicParsing="false" onDragDetected="#UpdateButton" text="Update circular" />
-      <Button fx:id="AdminTableView" layoutX="300.0" layoutY="42.0" mnemonicParsing="false" onDragDetected="#addButton" text="Add circular" />
-      <TableView layoutX="14.0" layoutY="273.0" prefHeight="200.0" prefWidth="702.0">
+      <Button layoutX="588.0" layoutY="497.0" mnemonicParsing="false" onAction="#viewCircularOnAction" text="View circular" />
+      <Button layoutX="297.0" layoutY="233.0" mnemonicParsing="false" onAction="#addCircularOnAction" onDragDetected="#addButton" text="Add circular" />
+      <TableView fx:id="circularManagementTableview" layoutX="14.0" layoutY="273.0" prefHeight="200.0" prefWidth="702.0">
         <columns>
           <TableColumn fx:id="jobTCOL" prefWidth="117.60000324249268" text="Job Title" />
           <TableColumn fx:id="DepartmentTCOL" prefWidth="109.5999755859375" text="Department" />
@@ -37,5 +36,7 @@
             <TableColumn fx:id="DescriptionTCOL" prefWidth="160.79998779296875" text="Description" />
         </columns>
       </TableView>
+      <Button layoutX="14.0" layoutY="496.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="26.0" prefWidth="97.0" text="Back" />
+      <Button layoutX="337.0" layoutY="497.0" mnemonicParsing="false" onAction="#saveCircularOnAction" text="Save  circular" />
    </children>
 </AnchorPane>

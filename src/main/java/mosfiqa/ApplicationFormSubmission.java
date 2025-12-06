@@ -2,7 +2,7 @@ package mosfiqa;
 
 import java.time.LocalDate;
 
-public class goal11 {
+public class ApplicationFormSubmission {
     private String applicationId,fullName;
     private String fathersName,nid,gender,address;
     private String educationInfo;
@@ -86,7 +86,7 @@ public class goal11 {
                 '}';
     }
 
-    public goal11(String applicationId, String fullName, String fathersName, String nid, String gender, String address, String educationInfo, LocalDate dob) {
+    public ApplicationFormSubmission(String applicationId, String fullName, String fathersName, String nid, String gender, String address, String educationInfo, LocalDate dob) {
         this.applicationId = applicationId;
         this.fullName = fullName;
         this.fathersName = fathersName;
