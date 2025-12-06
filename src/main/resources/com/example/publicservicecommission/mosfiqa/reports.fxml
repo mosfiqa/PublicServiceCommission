@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="559.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reportsController">
    <children>
       <ComboBox layoutX="117.0" layoutY="44.0" prefWidth="150.0" />
@@ -20,8 +19,8 @@
       <Text layoutX="22.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Circular ID" />
       <Text layoutX="22.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam ID" />
       <Text layoutX="406.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Range" />
-      <Button layoutX="341.0" layoutY="108.0" mnemonicParsing="false" onAction="#generatereportButton" text="Generate Report" />
-      <Button layoutX="502.0" layoutY="108.0" mnemonicParsing="false" onAction="#ExportreportButton" text="Export Report" />
+      <Button layoutX="341.0" layoutY="108.0" mnemonicParsing="false" onAction="#addButton" text="add report" />
+      <Button layoutX="502.0" layoutY="108.0" mnemonicParsing="false" onAction="#viewButton" text="view report" />
       <TableView fx:id="reportTV" layoutX="22.0" layoutY="251.0" prefHeight="251.0" prefWidth="542.0">
         <columns>
           <TableColumn fx:id="appsummTCOL" prefWidth="116.79995346069336" text="Applicant Summary" />
@@ -30,5 +29,6 @@
             <TableColumn fx:id="financeTCOL" prefWidth="148.79998779296875" text="Finance" />
         </columns>
       </TableView>
+      <Button layoutX="341.0" layoutY="158.0" mnemonicParsing="false" onAction="#saveButton" text="save report" />
    </children>
 </AnchorPane>
