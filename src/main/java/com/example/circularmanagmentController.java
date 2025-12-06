@@ -16,6 +16,7 @@ import mosfiqa.CircularManagement;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.util.EventObject;
 
 public class circularmanagmentController
 {
@@ -60,6 +61,7 @@ public class circularmanagmentController
     //****
 
 ObservableList<CircularManagement> circularList= FXCollections.observableArrayList();
+    private EventObject event;
 
 
     @javafx.fxml.FXML
@@ -130,7 +132,7 @@ ObservableList<CircularManagement> circularList= FXCollections.observableArrayLi
     @javafx.fxml.FXML
     public void backOnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("user_1_dashboard.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/publicservicecommission/mosfiqa/user_1_dashborad.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
