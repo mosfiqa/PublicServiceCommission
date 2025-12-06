@@ -154,13 +154,6 @@ public class marks_verification {
         marksTview.setItems(filtered);
     }
 
-    
-    @FXML
-    public void backButton(ActionEvent actionEvent) {
-        // Add scene switching here
-    }
-
-}
 
     @javafx.fxml.FXML
     public void addButton(ActionEvent actionEvent) {
