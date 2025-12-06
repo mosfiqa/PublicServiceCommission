@@ -1,37 +1,33 @@
 package ela.accounts_officer;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextArea;
+import javafx.scene.chart.PieChart;
+import javafx.scene.control.Label;
 
 public class ChartController {
 
-    @FXML
-    private TextArea chartArea;
+    @FXML private PieChart pieChart;
+    @FXML private Label statusLabel;
 
     @FXML
     public void initialize() {
-        showChart();
+        // Optional: You can load data automatically here if you want
     }
 
     @FXML
-    public void refreshChartOnAction(ActionEvent event) {
-        showChart();
-        chartArea.appendText("\n\n(Data Refreshed at " + java.time.LocalTime.now() + ")");
-    }
+    public void loadChartButtonOnAction(ActionEvent event) {
+        ObservableList<PieChart.Data> chartData = FXCollections.observableArrayList();
 
-    private void showChart() {
-        String chart = "--- INCOME VS EXPENSE CHART (DECEMBER 2025) ---\n\n";
+        chartData.add(new PieChart.Data("Exam Fees (Income)", 50000));
+        chartData.add(new PieChart.Data("Printing Costs (Expense)", 15000));
+        chartData.add(new PieChart.Data("Staff Salaries (Expense)", 20000));
+        chartData.add(new PieChart.Data("Logistics (Expense)", 5000));
 
-        chart += "INCOME  (500,000):  ************************** (500k)\n";
-        chart += "EXPENSE (200,000):  ********** (200k)\n";
-        chart += "PROFIT  (300,000):  *************** (300k)\n\n";
+        pieChart.setData(chartData);
 
-        chart += "--------------------------------------------------\n";
-        chart += "ANALYSIS:\n";
-        chart += "1. Income is 2.5x higher than expenses.\n";
-        chart += "2. Profit margin is healthy.\n";
-
-        chartArea.setText(chart);
+        statusLabel.setText("Status: Chart Loaded Successfully.");
     }
 }

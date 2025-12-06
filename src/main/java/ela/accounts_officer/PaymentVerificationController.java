@@ -79,7 +79,6 @@ public class PaymentVerificationController {
             if (selectedPayment.getStatus().equals("Verified")) {
                 feedbackTextArea.setText("Note: This payment is already verified.");
             } else {
-                // Confirmation Alert
                 Alert c = new Alert(Alert.AlertType.CONFIRMATION);
                 c.setContentText("Are you sure you want to verify?");
                 c.showAndWait().ifPresent(response -> {
